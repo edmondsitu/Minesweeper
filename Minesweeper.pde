@@ -173,7 +173,7 @@ public class MSButton
             fill(200); //after clicking the button
         else 
             fill(100); //display color
-        stroke(200);
+        stroke(0);
         rect(x, y, width, height);
         fill(0);
         stroke(0);
