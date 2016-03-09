@@ -2,9 +2,9 @@
 
 import de.bezier.guido.*;
 //Declare and initialize NUM_ROWS and NUM_COLS = 20, constants
-public final static int NUM_ROWS = 25;
-public final static int NUM_COLS = 25;
-public final static int NUM_BOMBS = 50;
+public final static int NUM_ROWS = 20;
+public final static int NUM_COLS = 20;
+public final static int NUM_BOMBS = 30;
 boolean startGame = false;
 boolean gameOverScreen = false;
 private MSButton[][] buttons; //2d array of minesweeper buttons, array of arrays
@@ -12,7 +12,7 @@ private ArrayList <MSButton> bombs = new ArrayList <MSButton>(); //ArrayList of 
 
 void setup ()
 {
-    size(600, 600);
+    size(500, 500);
     textAlign(CENTER,CENTER);
     
     // make the manager
@@ -100,8 +100,8 @@ public class MSButton
     
     public MSButton ( int rr, int cc )
     {
-        width = 600/NUM_COLS;
-        height = 600/NUM_ROWS;
+        width = 500/NUM_COLS;
+        height = 500/NUM_ROWS;
         r = rr;
         c = cc; 
         x = c*width;
